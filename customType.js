@@ -1,0 +1,14 @@
+var users;
+users = [];
+var users1;
+var users2;
+var users3;
+users1 = { name: "Ahsan" };
+users2 = { name: "Ahmed", id: 102 };
+users3 = { name: "Rakib", id: 103 };
+users.push(users1);
+users.push(users2);
+users.push(users3);
+console.log(users);
+var getRequest = "GET";
+getRequest = "GET";
