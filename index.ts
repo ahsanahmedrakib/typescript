@@ -1,4 +1,8 @@
-let userName1 = "Ahsan";
-let userName2 = "Ahmed";
-let userName3 = "Rakib";
-console.log(userName1 + " " + userName2 + " " + userName3);
+let userName: string;
+userName = "Ahsan Ahmed Rakib";
+
+function addNumbers(n1: number, n2: number) {
+  console.log(n1 + n2);
+}
+addNumbers(1, 2);
+// console.log(userName);
