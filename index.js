@@ -21,3 +21,20 @@ userInfo3 = function (name, age) {
 userInfo1();
 userInfo2("Ahsan");
 console.log(userInfo3("Ahmed", 20));
+var user = {
+    id: 1,
+    name: "Ahsan",
+    age: 10
+};
+var user0 = {
+    id: 2,
+    name: "Ahmed",
+    age: 11
+};
+var users = [];
+users.push(user);
+users.push(user0);
+var printUserInfo = function (user) {
+    console.log("User ID: ", user.id + "." + " User Name: ", user.name + "." + " User Age: ", user.age);
+};
+users.forEach(function (user) { return printUserInfo(user); });

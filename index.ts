@@ -26,3 +26,38 @@ userInfo3 = (name: string, age: number) => {
 userInfo1();
 userInfo2("Ahsan");
 console.log(userInfo3("Ahmed", 20));
+
+// interface
+
+interface IUser {
+  id: number;
+  name: string;
+  age: number;
+}
+
+let user: IUser = {
+  id: 1,
+  name: "Ahsan",
+  age: 10,
+};
+let user0: IUser = {
+  id: 2,
+  name: "Ahmed",
+  age: 11,
+};
+
+let users: IUser[] = [];
+
+users.push(user);
+users.push(user0);
+
+const printUserInfo = (user: IUser) => {
+  console.log(
+    "User ID: ",
+    user.id + "." + " User Name: ",
+    user.name + "." + " User Age: ",
+    user.age
+  );
+};
+
+users.forEach((user) => printUserInfo(user));
