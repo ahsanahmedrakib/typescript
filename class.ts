@@ -22,3 +22,20 @@ user1.display();
 
 let user2 = new User("Alex", 4);
 user2.display();
+
+// interface in class
+
+interface IUserFormatter {
+  formatUser: () => string;
+}
+
+class User1 implements IUserFormatter {
+  constructor(private userName: string, private age: number) {}
+
+  formatUser = () => {
+    return `${this.userName} is ${this.age} years old.`;
+  };
+}
+
+let user3 = new User1("John", 20);
+console.log(user3.formatUser());
